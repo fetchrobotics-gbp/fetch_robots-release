@@ -2,6 +2,12 @@
 Changelog for package fetch_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.5.4 (2015-05-10)
+------------------
+* filter shadow points from laser
+* reorganize launch files for easier updating of calibrated robots
+* Contributors: Michael Ferguson
+
 0.5.3 (2015-05-03)
 ------------------
 * use new laser safety feature of base controller
