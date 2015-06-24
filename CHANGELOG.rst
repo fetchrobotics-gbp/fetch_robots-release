@@ -2,6 +2,9 @@
 Changelog for package freight_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.0 (2015-06-23)
+------------------
+
 0.5.5 (2015-05-21)
 ------------------
 * use no_delay parameter with graft
