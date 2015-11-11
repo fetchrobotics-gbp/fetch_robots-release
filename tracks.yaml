@@ -19,5 +19,5 @@ tracks:
     release_tag: :{version}
     ros_distro: indigo
     vcs_type: git
-    vcs_uri: git@github.com:fetchrobotics/fetch_robots.git
+    vcs_uri: git@github.com:fetchrobotics-gbp/fetch_robots.git
     version: :{auto}
