@@ -1,0 +1,12 @@
+Source: ros-indigo-fetch-bringup
+Section: misc
+Priority: extra
+Maintainer: Michael Ferguson <mferguson@fetchrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-fetch-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-depth-image-proc, ros-indigo-fetch-description, ros-indigo-fetch-drivers, ros-indigo-fetch-teleop, ros-indigo-graft, ros-indigo-image-proc, ros-indigo-joy, ros-indigo-openni2-launch, ros-indigo-robot-controllers-msgs, ros-indigo-robot-state-publisher, ros-indigo-sensor-msgs, ros-indigo-sick-tim (>= 0.0.4), sixad (>= 1.6.1)
+Description: Bringup for fetch
