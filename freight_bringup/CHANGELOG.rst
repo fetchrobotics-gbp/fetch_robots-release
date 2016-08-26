@@ -2,6 +2,12 @@
 Changelog for package freight_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.3 (2016-08-26)
+------------------
+* added calibration_date param
+* remove extra nodelet manager
+* Contributors: Michael Ferguson, Niharika Arora
+
 0.7.2 (2016-06-14)
 ------------------
 * add launch_camera argument
