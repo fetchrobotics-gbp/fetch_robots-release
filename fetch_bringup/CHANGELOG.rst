@@ -2,6 +2,11 @@
 Changelog for package fetch_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.4 (2017-03-28)
+------------------
+* Updates for research robots
+* Contributors: Michael Ferguson
+
 0.7.3 (2016-08-26)
 ------------------
 * Add install rule for software runstop
