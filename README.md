@@ -1,3 +1,28 @@
+## fetch_robots (indigo) - 0.7.4-0
+
+The packages in the `fetch_robots` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo fetch_robots` on `Tue, 28 Mar 2017 23:05:55 -0000`
+
+These packages were released:
+- `fetch_bringup`
+- `freight_bringup`
+
+Version of package(s) in repository `fetch_robots`:
+
+- upstream repository: git@github.com:fetchrobotics/fetch_robots.git
+- release repository: git@github.com:fetchrobotics-gbp/fetch_robots-release.git
+- rosdistro version: `0.7.3-0`
+- old version: `0.7.3-0`
+- new version: `0.7.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## fetch_robots (indigo) - 0.7.3-0
 
 The packages in the `fetch_robots` repository were released into the `indigo` distro by running `/usr/bin/bloom-release -r indigo -t indigo fetch_robots` on `Fri, 26 Aug 2016 19:08:43 -0000`
