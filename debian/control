@@ -1,0 +1,13 @@
+Source: ros-melodic-fetch-drivers
+Section: misc
+Priority: extra
+Maintainer: Alexander Moriarty <amoriarty@fetchrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-mk
+Homepage: https://wiki.ros.org/fetch_drivers
+Standards-Version: 3.9.2
+
+Package: ros-melodic-fetch-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, curl, libboost-all-dev, libcurl4-openssl-dev, libyaml-cpp-dev, python-dev, ros-melodic-actionlib, ros-melodic-actionlib-msgs, ros-melodic-diagnostic-msgs, ros-melodic-fetch-auto-dock-msgs, ros-melodic-fetch-driver-msgs, ros-melodic-nav-msgs, ros-melodic-power-msgs, ros-melodic-robot-calibration-msgs, ros-melodic-robot-controllers, ros-melodic-robot-controllers-interface, ros-melodic-rosconsole, ros-melodic-roscpp, ros-melodic-roscpp-serialization, ros-melodic-rostime, ros-melodic-sensor-msgs, ros-melodic-urdf
+Description: The public fetch_drivers package is a binary only release.
+ fetch_drivers contains both the drivers and firmware for the fetch and freight research robots. There should be no reason to use these drivers unless you're running on a fetch or a freight research robot. This package, is a cmake/make only package which installs the binaries for the drivers and firmware.
