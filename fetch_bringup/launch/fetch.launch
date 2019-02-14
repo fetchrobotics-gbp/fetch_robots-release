@@ -1,4 +1,7 @@
 <launch>
+  <!-- robot specific information on parameters https://github.com/ros-infrastructure/rep/pull/104 -->
+  <param name="robot/type" value="fetch" />
+  <param name="robot/name" textfile="/etc/hostname" />
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />
@@ -52,6 +55,9 @@
 
   <!-- Teleop -->
   <include file="$(find fetch_bringup)/launch/include/teleop.launch.xml" />
+
+  <!-- Autodocking -->
+  <include file="$(find fetch_open_auto_dock)/launch/auto_dock.launch" />
 
   <!-- Software Runstop -->
   <include file="$(find fetch_bringup)/launch/include/runstop.launch.xml">
