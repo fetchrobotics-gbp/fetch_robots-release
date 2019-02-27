@@ -1,3 +1,29 @@
+## fetch_robots (melodic) - 0.8.5-0
+
+The packages in the `fetch_robots` repository were released into the `melodic` distro by running `/usr/bin/bloom-release fetch_robots --rosdistro melodic` on `Wed, 27 Feb 2019 01:33:17 -0000`
+
+These packages were released:
+- `fetch_bringup`
+- `fetch_drivers`
+- `freight_bringup`
+
+Version of package(s) in repository `fetch_robots`:
+
+- upstream repository: git@github.com:fetchrobotics/fetch_robots.git
+- release repository: https://github.com/fetchrobotics-gbp/fetch_robots-release.git
+- rosdistro version: `0.8.4-0`
+- old version: `0.8.4-0`
+- new version: `0.8.5-0`
+
+Versions of tools used:
+
+- bloom version: `0.7.2`
+- catkin_pkg version: `0.4.3`
+- rosdep version: `0.15.1`
+- rosdistro version: `0.7.2`
+- vcstools version: `0.1.40`
+
+
 ## fetch_robots (melodic) - 0.8.4-0
 
 The packages in the `fetch_robots` repository were released into the `melodic` distro by running `/usr/bin/bloom-release fetch_robots --rosdistro melodic` on `Thu, 21 Feb 2019 22:44:01 -0000`
