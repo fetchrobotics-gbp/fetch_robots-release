@@ -2,6 +2,9 @@
 Changelog for package fetch_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.8.7 (2019-08-06)
+------------------
+
 0.8.6 (2019-02-28)
 ------------------
 * Merge pull request `#36 <https://github.com/fetchrobotics/fetch_robots/issues/36>`_ from fetchrobotics/install-laser-filters
