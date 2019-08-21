@@ -1,0 +1,226 @@
+ros-melodic-freight-bringup (0.8.8-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Wed, 21 Aug 2019 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.7-1bionic) bionic; urgency=high
+
+  * Move ds4drv dep from package.xml to sys-config deb (#48 <https://github.com/fetchrobotics/fetch_robots/issues/48>)
+    ROS buildfarm doesn't support pip dependencies.
+    Also removed outdated sixad line. We don't install sixad at all in 18.04.
+  * Update launch files to support PS4 teleop w/ds4drv
+    - Teleop: Change default /joy/dev param to /dev/fetch_joy to match
+    udev rules
+    - Add ps4 flag/arg to default fetch.launch and freight.launch
+    - As workaround to a weird bug, renamed 'joy' node to 'joy_node'
+  * add joystick deadzone parameter (#42 <https://github.com/fetchrobotics/fetch_robots/issues/42>)
+  * Add argument to select launching teleop (#40 <https://github.com/fetchrobotics/fetch_robots/issues/40>)
+    - add argument to select launching teleop for Fetch
+    - add argument to select launching teleop for freight
+  * Contributors: Andrew Parker, Eric Relson, Naoya Yamaguchi
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 06 Aug 2019 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.6-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 28 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.5-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 26 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.4-1bionic) bionic; urgency=high
+
+  * Add additional convenience packages as deps (#33 <https://github.com/fetchrobotics/fetch_robots/issues/33>)
+    * Add additional convenience packages as deps
+    * system config deb pulls in rest of debs
+    * Fix netplan configuration approach
+  * Contributors: Eric Relson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 21 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.3-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Fri, 15 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.2-1bionic) bionic; urgency=high
+
+  * Merge pull request #30 <https://github.com/fetchrobotics/fetch_robots/issues/30> from moriarty/rebased-pr-26
+    [bringup] package format v2 (originally #26 <https://github.com/fetchrobotics/fetch_robots/issues/26>)
+  * Remove unsupported PMD camera configuration
+  * Add ps3joy exec dep; update to package.xml 2.0
+    Also removed robot_controllers_msgs for fetch_bringup. This dependency
+    is part of fetch_drivers package already.
+  * Contributors: Alex Moriarty, Eric Relson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Fri, 15 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.1-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Fri, 15 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.8.0-1bionic) bionic; urgency=high
+
+  * Add autodocking to default robot launch (#28 <https://github.com/fetchrobotics/fetch_robots/issues/28>)
+    Also update package.xml
+  * sixad depend not needed anymore on bionic (#24 <https://github.com/fetchrobotics/fetch_robots/issues/24>)
+    * sixad depend not needed anymore on bionic
+    * remove sixad from fetch_bringup
+  * [ros param] adds robot/name robot/type (#22 <https://github.com/fetchrobotics/fetch_robots/issues/22>)
+    add robot specific information on rosparam, see https://github.com/ros-infrastructure/rep/pull/104
+    Related to: ros-infrastructure/rep#104 <https://github.com/ros-infrastructure/rep/issues/104>
+  * Contributors: Eric Relson, Kei Okada, Steffen Fuchs
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Wed, 13 Feb 2019 08:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.5-1bionic) bionic; urgency=high
+
+  * Add diagnostics aggregator launch and config
+  * Contributors: Eric Relson, Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Mon, 12 Jun 2017 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.4-1bionic) bionic; urgency=high
+
+  * Updates for research robots
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 28 Mar 2017 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.3-1bionic) bionic; urgency=high
+
+  * added calibration_date param
+  * remove extra nodelet manager
+  * Contributors: Michael Ferguson, Niharika Arora
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Fri, 26 Aug 2016 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.2-1bionic) bionic; urgency=high
+
+  * add launch_camera argument
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 14 Jun 2016 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.1-1bionic) bionic; urgency=high
+
+  * update to use /dev/ps3joy
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 05 May 2016 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.7.0-1bionic) bionic; urgency=high
+
+  * fix dependency issue with sixad
+  * Added PMD to freight.launch
+  * Contributors: Alex Henning, Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Mon, 28 Mar 2016 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.6.1-1bionic) bionic; urgency=high
+
+  * require latest sixad
+  * Raised acceleration limits to 2.0
+  * Add autorepeat_rate parameter to teleop launch
+  * Contributors: Alex Henning, Michael Ferguson, Michael Hwang
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 22 Mar 2016 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.6.0-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Tue, 23 Jun 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.5-1bionic) bionic; urgency=high
+
+  * use no_delay parameter with graft
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 21 May 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.4-1bionic) bionic; urgency=high
+
+  * filter shadow points from laser
+  * reorganize launch files for easier updating of calibrated robots
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sun, 10 May 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.3-1bionic) bionic; urgency=high
+
+  * use new laser safety feature of base controller
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sun, 03 May 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.2-1bionic) bionic; urgency=high
+
+  * hold position when stopped
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sun, 19 Apr 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.1-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 09 Apr 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.5.0-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sat, 04 Apr 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.4.2-1bionic) bionic; urgency=high
+
+  * add depend on joy
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Mon, 23 Mar 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.4.1-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Mon, 23 Mar 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.4.0-1bionic) bionic; urgency=high
+
+  * update to use fetch_teleop
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sun, 22 Mar 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.3.2-1bionic) bionic; urgency=high
+
+  * specify minimum version of laser drivers
+  * update laser parameters
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sat, 21 Mar 2015 07:00:00 -0000
+
+ros-melodic-freight-bringup (0.3.1-1bionic) bionic; urgency=high
+
+
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sat, 14 Mar 2015 02:53:00 -0000
+
+ros-melodic-freight-bringup (0.3.0-1bionic) bionic; urgency=high
+
+  * initial release
+  * Contributors: Michael Ferguson
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sat, 14 Mar 2015 01:59:00 -0000
+
+
