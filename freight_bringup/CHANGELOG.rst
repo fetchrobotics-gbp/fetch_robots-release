@@ -2,6 +2,9 @@
 Changelog for package freight_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.8.8 (2019-08-21)
+------------------
+
 0.8.7 (2019-08-06)
 ------------------
 * Move ds4drv dep from package.xml to sys-config deb (`#48 <https://github.com/fetchrobotics/fetch_robots/issues/48>`_)
