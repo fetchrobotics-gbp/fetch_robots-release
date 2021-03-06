@@ -2,6 +2,17 @@
 Changelog for package fetch_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.9.1 (2021-03-05)
+------------------
+* Initial Noetic release
+* Point to a new drivers binary release (0.9.0)
+* Contributors: Alex Moriarty, Eric Relson, Russell Toris
+
+0.9.0 (2021-03-05)
+------------------
+
+* Contributors: Alex Moriarty, Eric Relson, Russell Toris
+
 0.8.8 (2019-08-21)
 ------------------
 * Binary Drivers 0.8.8 (`#52 <https://github.com/fetchrobotics/fetch_robots/issues/52>`_)
