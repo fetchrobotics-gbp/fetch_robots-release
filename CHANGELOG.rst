@@ -2,6 +2,14 @@
 Changelog for package fetch_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.8.9 (2021-03-06)
+------------------
+* Initial Noetic release
+* Respawn tuck_arm node on shutdown [OPEN-48] (`#59 <https://github.com/fetchrobotics/fetch_robots/issues/59>`_)
+* Add soundplay ROS node as systemd service (`#53 <https://github.com/fetchrobotics/fetch_robots/issues/53>`_)
+* Updates maintainers
+* Contributors: Eric Relson, Jeff Wilson
+
 0.8.8 (2019-08-21)
 ------------------
 
