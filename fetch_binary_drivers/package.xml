@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>fetch_drivers</name>
-  <version>0.9.1</version>
+  <version>0.8.9</version>
   <description>
     The public fetch_drivers package is a binary only release.
 
@@ -39,7 +39,7 @@
   <!-- system dependencies which the drivers dyanmically link against -->
   <depend>boost</depend>
   <depend>curl</depend>
-  <depend>python3</depend>
+  <depend>python</depend>
   <depend>yaml-cpp</depend>
 
   <!-- ros msgs which the drivers depend on -->

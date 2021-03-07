@@ -2,16 +2,11 @@
 Changelog for package fetch_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.9.1 (2021-03-05)
+0.8.9 (2021-03-06)
 ------------------
 * Initial Noetic release
-* Point to a new drivers binary release (0.9.0)
-* Contributors: Alex Moriarty, Eric Relson, Russell Toris
-
-0.9.0 (2021-03-05)
-------------------
-
-* Contributors: Alex Moriarty, Eric Relson, Russell Toris
+* Updates maintainers
+* Contributors: Alex Moriarty, Russell Toris
 
 0.8.8 (2019-08-21)
 ------------------
