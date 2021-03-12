@@ -1,0 +1,36 @@
+Source: fetch-system-config
+Section: main
+Priority: optional
+Maintainer: Eric Relson <erelson@fetchrobotics.com>
+Build-Depends: debhelper (>= 9.0.0),
+               dh-systemd (>= 1.5)
+Standards-Version: 3.9.4
+Homepage: https://docs.fetchrobotics.com
+
+Package: fetch-noetic-config
+Architecture: any
+Depends: ${misc:Depends},
+         adduser,
+         chrony,
+         openssh-server,
+         ros-noetic-fetch-bringup,
+         ros-noetic-ros
+Description: Configuration for Fetch on Noetic
+  This package will start ROS Noetic at bootup
+Conflicts: fetch-system-config,
+           freight-noetic-config,
+           freight-system-config
+
+Package: freight-noetic-config
+Architecture: any
+Depends: ${misc:Depends},
+         adduser,
+         chrony,
+         openssh-server,
+         ros-noetic-freight-bringup,
+         ros-noetic-ros
+Description: Configuration for Freight on Noetic
+  This package will start ROS Noetic at bootup
+Conflicts: fetch-noetic-config,
+           fetch-system-config,
+           freight-system-config
