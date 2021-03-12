@@ -2,11 +2,21 @@
 Changelog for package fetch_drivers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.8.9 (2021-03-06)
+0.9.2 (2021-03-12)
+------------------
+* Update md5sum file
+* Contributors: Eric Relson
+
+0.9.1 (2021-03-05)
 ------------------
 * Initial Noetic release
-* Updates maintainers
-* Contributors: Alex Moriarty, Russell Toris
+* Point to a new drivers binary release (0.9.0)
+* Contributors: Alex Moriarty, Eric Relson, Russell Toris
+
+0.9.0 (2021-03-05)
+------------------
+
+* Contributors: Alex Moriarty, Eric Relson, Russell Toris
 
 0.8.8 (2019-08-21)
 ------------------
