@@ -1,8 +1,0 @@
-/var/log/ros/robot.log {
-    su ros ros
-    maxsize=50M
-    rotate 7
-    missingok
-    delaycompress
-    copytruncate
-}
