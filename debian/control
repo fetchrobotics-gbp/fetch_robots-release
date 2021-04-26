@@ -1,0 +1,12 @@
+Source: ros-noetic-freight-bringup
+Section: misc
+Priority: optional
+Maintainer: Eric Relson <erelson@fetchrobotics.com>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-noetic-freight-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-diagnostic-aggregator, ros-noetic-fetch-description, ros-noetic-fetch-drivers, ros-noetic-fetch-navigation, ros-noetic-fetch-open-auto-dock, ros-noetic-fetch-teleop, ros-noetic-graft, ros-noetic-joy, ros-noetic-robot-state-publisher, ros-noetic-sick-tim (>= 0.0.4), ros-noetic-sound-play
+Description: Bringup for freight
