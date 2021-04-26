@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 set -e
 
@@ -60,7 +60,7 @@ case "$1" in
         fi
 
         # For PS4 controller support, install ds4drv with pip, presuming that pip is installed already
-        pip install ds4drv
+        /usr/local/bin/pip install ds4drv
 
         ### Set up ethernet to ensure static network for internal robot communications.
         # Reboot required for changes to take effect.
@@ -101,7 +101,9 @@ case "$1" in
         # With 18.04+, we have a grub config to not use new-style network-device naming. With 20.04 we
         # need to remove the interface specifications in the wifi network connection info.  Otherwise,
         # after reboot, when the wifi device has a different name, the computer will fail to get online.
-        sed -i '/^interface-name/d' /etc/NetworkManager/system-connections/*
+        if ls /etc/NetworkManager/system-connections/*; then
+            sed -i '/^interface-name/d' /etc/NetworkManager/system-connections/*
+        fi
 
         # Setup chrony to allow time jumps on start
         if [ ! `grep makestep /etc/chrony/chrony.conf >/dev/null && echo $?` ]; then

@@ -1,8 +1,22 @@
+fetch-system-config (0.3-0ubuntu2) focal; urgency=medium
+
+  * Set PS4 service enabled by default; remove ps3joy service
+  * Cleanup systemd logging approach thanks to newer systemd version in 20.04
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Sun, 25 Apr 2021 21:40:20 -0700
+
+fetch-system-config (0.3-0ubuntu1) focal; urgency=medium
+
+  * Tweaks for Ubuntu 20.04 and ROS Noetic
+  * Removes PS3 controller support
+
+ -- Eric Relson <erelson@fetchrobotics.com>  Wed, 24 Mar 2021 21:07:09 -0700
+
 fetch-system-config (0.2-0ubuntu2) trusty; urgency=medium
 
   * Add soundplay node systemd service for Fetch and Freight
 
- -- Eric Relson <erelson@sw18>  Thu, 29 Aug 2019 17:52:35 -0700
+ -- Eric Relson <erelson@fetchrobotics.com>  Thu, 29 Aug 2019 17:52:35 -0700
 
 fetch-system-config (0.2-0ubuntu1) bionic; urgency=medium
 
